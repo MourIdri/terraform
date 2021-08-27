@@ -1,6 +1,6 @@
 variable "customer-name" {
   description = "Customer name"
-  default = "changeme"
+  default = "mouradcloud"
 }
 
 variable "hub-location" {
