@@ -11,7 +11,7 @@
 # }
 
 provider "azurerm" {
-  version = "~> 2.70"
+  # version = "~> 2.70"
   features {
     key_vault {
       purge_soft_delete_on_destroy = true
