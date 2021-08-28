@@ -1,23 +1,22 @@
 # Configure the Azure provider
-# terraform {
-#  required_providers {
-#    azurerm = {
-#      source  = "hashicorp/azurerm"
-#      version = "~> 2.70"
-#    }
-#  }
-
-  # required_version = ">= 0.14.9"
-# }
-
-provider "azurerm" {
-  version = "2.72.0"
-  features {
-    key_vault {
-      purge_soft_delete_on_destroy = true
+ terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 2.70"
     }
-   }
-}
+  }
+  # required_version = ">= 0.14.9"
+ }
+
+#provider "azurerm" {
+#  version = "2.72.0"
+#  features {
+#    key_vault {
+#      purge_soft_delete_on_destroy = true
+#    }
+#   }
+#}
 
 data "azurerm_client_config" "current" {}
 
