@@ -1,15 +1,20 @@
 # Configure the Azure provider
- terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 2.70"
-    }
-  }
-  # required_version = ">= 0.14.9"
- }
+# terraform {
+#  required_providers {
+#    azurerm = {
+#      source  = "hashicorp/azurerm"
+#      version = "~> 2.70"
+#    }
+#  }
+#  required_version = ">= 0.14.9"
+# }
 
-#provider "azurerm" {
+provider "azurerm" {
+  version="~> 2.70"
+  features {}
+}
+
+  #provider "azurerm" {
 #  version = "2.72.0"
 #  features {
 #    key_vault {
