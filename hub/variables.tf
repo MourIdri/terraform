@@ -1,6 +1,6 @@
 variable "customer-name" {
   description = "Customer name"
-  default = "mngenv754303-qtr"
+  default = "mngenv754303"
 }
 
 variable "hub-location" {
