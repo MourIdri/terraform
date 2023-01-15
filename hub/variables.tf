@@ -5,7 +5,7 @@ variable "customer-name" {
 
 variable "hub-location" {
   description = "Location of the hub components"
-  default     = "westeurope"
+  default     = "qatarcentral"
 }
 
 variable "hub-rg" {
