@@ -2,7 +2,7 @@ resource "azurerm_linux_virtual_machine" "vm-jumpbox-1" {
   name                = "linjumpserver1"
   resource_group_name = var.rg-name
   location            = var.rg-location
-  size                = "Standard_D2a_v4"
+  size                = "Standard_D2s_v4"
   admin_username      = var.linux-admin-userid
   admin_password      = var.linux-admin-password
   disable_password_authentication  = "false"
@@ -74,7 +74,7 @@ resource "azurerm_windows_virtual_machine" "vm-jumpbox-2" {
   name                = "winjumpserver1"
   resource_group_name = var.rg-name
   location            = var.rg-location
-  size                = "Standard_D2a_v4"
+  size                = "Standard_D2s_v4"
   admin_username      = var.windows-admin-userid
   admin_password      = var.windows-admin-password
   network_interface_ids = [
