@@ -1,6 +1,6 @@
 variable "customer-name" {
   description = "Customer name"
-  default = "mouradcloud"
+  default = "mngenv754303"
 }
 
 variable "hub-location" {
@@ -31,42 +31,42 @@ variable "kv-softdelete-retention-days" {
 ############################ VNET & SUBNETS ###################
 #Address space for HUB VNET
 variable "hub-vnet-address-space" { 
-  default = "10.105.0.0/22"
+  default = "10.250.0.0/22"
 }
 
 #Address range for the Firewall subnet (1-63)
 variable "firewall-subnet-address-space" {
-  default = "10.105.0.0/26"
+  default = "10.250.0.0/26"
 }
 
 #Address range for the application gateway subnet (64 - 127)
 variable "appgw-subnet-address-space" {
-  default = "10.105.0.64/26"
+  default = "10.250.0.64/26"
 }
 
 #Address range for the VNET gateway subnet (128 - 159)
 variable "gateway-subnet-address-space" {
-  default = "10.105.0.128/27"
+  default = "10.250.0.128/27"
 }
 
 #Address range for the bastion subnet (160 - 191)
 variable "bastion-subnet-address-space" {
-  default = "10.105.0.160/27"
+  default = "10.250.0.160/27"
 }
 
 #Address range for the management subnet 1 (192 - 207)
 variable "mgmt-subnet-1-address-space" {
-  default = "10.105.0.192/28"
+  default = "10.250.0.192/28"
 }
 
 #Address range for the management subnet 2 (208 - 223)
 variable "mgmt-subnet-2-address-space" {
-  default = "10.105.0.208/28"
+  default = "10.250.0.208/28"
 }
 
 #Address range for the shared services subnet (224 - 239)
 variable "shared-svcs-snet-address-space" {
-  default = "10.105.0.224/28"
+  default = "10.250.0.224/28"
 }
 
 ###################### JUMP SERVERS (WINDOWS & LINUX) #######
